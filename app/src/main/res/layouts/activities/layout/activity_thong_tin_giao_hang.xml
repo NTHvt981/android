@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ActivityThongTinGiaoHang">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPKTT"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.2"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintTop_toBottomOf="@+id/rvPKTT"
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        >
+        <EditText
+            android:id="@+id/edtTen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintWidth_percent="0.6"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.4"
+            android:layout_marginTop="50dp"
+
+            android:hint="Họ tên đầy đủ"
+            android:inputType="textPersonName"
+            android:enabled="false"
+            />
+        <ImageView
+            android:id="@+id/imgTen"
+            android:src="@mipmap/icon_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toTopOf="@id/edtTen"
+            app:layout_constraintBottom_toBottomOf="@id/edtTen"
+            app:layout_constraintStart_toEndOf="@id/edtTen"
+
+            android:clickable="true"
+            android:focusable="true"
+            />
+
+        <EditText
+            android:id="@+id/edtSDT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintWidth_percent="0.6"
+
+            app:layout_constraintTop_toBottomOf="@id/edtTen"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            android:layout_marginTop="50dp"
+
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintVertical_bias="0.25"
+
+            android:hint="Số điện thoại"
+            android:inputType="number"
+            android:enabled="false"
+            />
+        <ImageView
+            android:id="@+id/imgSDT"
+            android:src="@mipmap/icon_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toTopOf="@id/edtSDT"
+            app:layout_constraintBottom_toBottomOf="@id/edtSDT"
+            app:layout_constraintStart_toEndOf="@id/edtSDT"
+
+            android:clickable="true"
+            android:focusable="true"
+            />
+
+        <EditText
+            android:id="@+id/edtDiaChi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintWidth_percent="0.6"
+
+            app:layout_constraintTop_toBottomOf="@id/edtSDT"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            android:layout_marginTop="50dp"
+
+            app:layout_constraintHorizontal_bias="0.4"
+
+            android:hint="Địa chỉ"
+            android:inputType="textMultiLine"
+
+            android:gravity="start|top"
+            android:lines="10"
+            android:minLines="5"
+            android:maxLines="12"
+            android:enabled="false"
+            />
+        <ImageView
+            android:id="@+id/imgDiaChi"
+            android:src="@mipmap/icon_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintVertical_bias="0.9"
+
+            app:layout_constraintTop_toTopOf="@id/edtDiaChi"
+            app:layout_constraintBottom_toBottomOf="@id/edtDiaChi"
+            app:layout_constraintStart_toEndOf="@id/edtDiaChi"
+
+            android:clickable="true"
+            android:focusable="true"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnThanhToan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/style_btn_round_white_states"
+        android:textColor="@drawable/style_text_white_states"
+        app:layout_constraintWidth_percent="0.65"
+        android:text="Đặt Hàng"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.95"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

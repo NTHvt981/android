@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.giaodientest.Activities.ActivityDashboard"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/pbLoading"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:max="100"
+            android:backgroundTint="#FFFFFF"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            android:indeterminateTint="#1a09d6"
+            android:layout_marginTop="-7dp"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/imgUserProfile"
+            android:src="@drawable/pic_ex_user_profile"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.1"
+            android:focusable="true"
+            android:clickable="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.45"
+            android:text="Tên người dùng"
+            android:textSize="18sp"
+            />
+        <EditText
+            android:id="@+id/edtTen"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.75"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            android:layout_marginStart="50dp"
+
+            android:enabled="false"
+            android:maxLines="1"
+            android:inputType="text"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.55"
+            android:text="Số điện thoại"
+            android:textSize="18sp"
+            />
+        <EditText
+            android:id="@+id/edtSdt"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.75"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.6"
+            android:layout_marginStart="50dp"
+
+            android:enabled="false"
+            android:maxLines="1"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.65"
+            android:text="Địa chỉ"
+            android:textSize="18sp"
+            />
+        <EditText
+            android:id="@+id/edtDiaChi"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.75"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.8"
+            android:gravity="top"
+
+            android:layout_marginStart="50dp"
+
+            android:enabled="false"
+            android:minLines="4"
+            />
+        <Button
+            android:id="@+id/btnDangXuat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnSuaLuu"
+
+            android:background="@drawable/style_btn_round_white_states"
+            android:textColor="@drawable/style_text_white_states"
+
+            android:layout_marginVertical="@dimen/md_margin"
+            android:layout_marginStart="@dimen/md_margin"
+            android:layout_marginEnd="@dimen/sm_margin"
+
+            android:text="Đăng xuất"
+            />
+        <Button
+            android:id="@+id/btnSuaLuu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toEndOf="@id/btnDangXuat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            android:background="@drawable/style_btn_round_states"
+            android:textColor="@drawable/style_text_states"
+
+            android:layout_marginVertical="@dimen/md_margin"
+            android:layout_marginStart="@dimen/sm_margin"
+            android:layout_marginEnd="@dimen/md_margin"
+
+            android:text="@string/user_edit"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

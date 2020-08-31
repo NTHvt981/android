@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itemCustomize"
+        android:icon="@drawable/ic_userprofile"
+        android:title="Cá nhân"
+        />
+    <item
+        android:id="@+id/itemNews"
+        android:icon="@drawable/ic_news"
+        android:title="Tin tức"
+        />
+        />
+    <item
+        android:id="@+id/itemClothes"
+        android:icon="@drawable/ic_shirt"
+        android:title="Quần áo"
+        />
+    <item
+        android:id="@+id/itemCart"
+        android:icon="@drawable/ic_shopping_cart"
+        android:title="Đơn hàng"
+        />
+</menu>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="slide_time_slow">2000</dimen>
+    <dimen name="slide_time_fast">1000</dimen>
+</resources>

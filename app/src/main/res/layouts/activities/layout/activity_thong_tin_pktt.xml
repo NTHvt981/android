@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ActivityThongTinPKTT"
+    >
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgHinh"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+
+        android:src="@drawable/ic_email"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        />
+
+    <TextView
+        android:id="@+id/tvTen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Tên phụ kiện"
+        android:textSize="@dimen/md_text"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/tvLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Loại phụ kiện"
+        android:textSize="@dimen/sm_text"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginHorizontal="@dimen/md_margin"
+        android:layout_marginTop="@dimen/md_margin"
+        />
+    <TextView
+        android:id="@+id/tvHang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Hãng phụ kiện"
+        android:textSize="@dimen/sm_text"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginHorizontal="@dimen/md_margin"
+        android:layout_marginTop="@dimen/sm_margin"
+        />
+    <TextView
+        android:id="@+id/tvMau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Màu phụ kiện"
+        android:textSize="@dimen/sm_text"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginHorizontal="@dimen/md_margin"
+        android:layout_marginTop="@dimen/sm_margin"
+        />
+    <TextView
+        android:id="@+id/tvGia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Giá phụ kiện"
+        android:textSize="@dimen/sm_text"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginHorizontal="@dimen/md_margin"
+        android:layout_marginTop="@dimen/sm_margin"
+        />
+    <TextView
+        android:id="@+id/tvMoTa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Mô tả phụ kiện"
+        android:textSize="@dimen/xs_text"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginHorizontal="@dimen/md_margin"
+        android:layout_marginTop="@dimen/sm_margin"
+        />
+</LinearLayout>
+</ScrollView>

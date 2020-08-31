@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.giaodientest.Activities.ActivityDashboard"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutScreenshot"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:clickable="true"
+        android:focusable="true"
+        android:background="#FFFFFF"
+        >
+
+<!--        img for hat-->
+    <ImageView
+        android:id="@+id/imgHat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.15"
+        app:layout_constraintHeight_percent="0.1"
+
+        android:src="@drawable/icon_clothes_hat"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.07"
+
+        android:clickable="true"
+        android:focusable="true"
+        tools:ignore="ContentDescription" />
+<!--        img for shirt-->
+    <ImageView
+        android:id="@+id/imgShirt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.3"
+
+        android:src="@drawable/icon_clothes_shirt"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+
+        android:clickable="true"
+        android:focusable="true"
+        tools:ignore="ContentDescription" />
+<!--        img for pants-->
+    <ImageView
+        android:id="@+id/imgPants"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.55"
+        app:layout_constraintHeight_percent="0.5"
+
+        android:src="@drawable/icon_clothes_pants"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+
+        android:clickable="true"
+        android:focusable="true"
+        tools:ignore="ContentDescription" />
+<!--        img for shoes-->
+    <ImageView
+        android:id="@+id/imgShoes"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.25"
+        app:layout_constraintHeight_percent="0.1"
+
+        android:src="@drawable/icon_clothes_shoes"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.93"
+
+        android:clickable="true"
+        android:focusable="true"
+        tools:ignore="ContentDescription" />
+<!--        img for backpack-->
+    <ImageView
+        android:id="@+id/imgBackpack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintHeight_percent="0.15"
+
+        android:src="@drawable/icon_clothes_backpack"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.07"
+
+        android:clickable="true"
+        android:focusable="true"
+        tools:ignore="ContentDescription"
+        />
+
+<!--        img for cart (pre-order function)-->
+    <ImageView
+        android:id="@+id/imgCart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.1"
+
+        android:src="@drawable/icon_cart"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintHorizontal_bias="0.87"
+
+        android:clickable="true"
+        android:focusable="true"
+        tools:ignore="ContentDescription"
+        />
+
+<!--        save function-->
+    <ImageView
+        android:id="@+id/imgSave"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:src="@drawable/ic_save"
+        android:tint="#000000"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.9"
+
+        android:clickable="true"
+        android:focusable="true"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imgOpen"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:src="@drawable/ic_open"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintHorizontal_bias="0.9"
+
+        android:clickable="true"
+        android:focusable="true"
+        tools:ignore="ContentDescription"
+        />
+    <ImageView
+        android:id="@+id/imgNew"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:src="@drawable/ic_new_file"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.45"
+        app:layout_constraintHorizontal_bias="0.9"
+
+        android:clickable="true"
+        android:focusable="true"
+        tools:ignore="ContentDescription"
+        />
+
+<!--        side fragement for item list-->
+        <LinearLayout
+            android:id="@+id/layoutPKTT"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintWidth_percent="0.25"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            android:visibility="gone"
+            android:background="@color/colorPrimary"
+            >
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/style_btn_round_states"
+                android:text="Cancel"
+                android:textSize="@dimen/sm_text"
+                android:layout_margin="@dimen/sm_padding"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvPKTT"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

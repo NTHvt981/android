@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:layout_margin="5dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        style="@style/CardView"
+        >
+
+        <TextView
+            android:id="@+id/tvTen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            android:text="Tên người đặt: Nguyễn Văn A"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/tvGia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvTen"
+            app:layout_constraintStart_toStartOf="parent"
+
+            android:text="Tổng giá trị: 600000 VNĐ"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/tvThoiGian"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvGia"
+            app:layout_constraintStart_toStartOf="parent"
+
+            android:text="Thời gian đặt: 09:15:30 / 20-04-2020"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/tvTinhTrang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvThoiGian"
+            app:layout_constraintStart_toStartOf="parent"
+
+            android:text="Tình trạng: Đặt hàng thành công"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
